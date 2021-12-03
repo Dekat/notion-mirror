@@ -1,0 +1,10 @@
+# docker-compose file for dev environment.
+# Used to run the app locally and develop on it.
+version: '3.4'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/home/notion_mirror/app
+    command: pipenv run python manage.py run

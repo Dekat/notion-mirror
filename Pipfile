@@ -1,0 +1,27 @@
+[dev-packages]
+black = {version = "==21.12b0", index = "pypi"}
+debugpy = {version = "*", index = "pypi"}
+flake8 = {version = "*", index = "pypi"}
+flake8-bugbear = {version = "*", index = "pypi"}
+flake8-comprehensions = {version = "*", index = "pypi"}
+flake8-isort = {version = "*", index = "pypi"}
+isort = {version = "*", index = "pypi"}
+mypy = {version = "*", index = "pypi"}
+pdbpp = {version = "*", index = "pypi"}
+pep8-naming = {version = "*", index = "pypi"}
+pytest = {version = "*", index = "pypi"}
+pytest-cov = {version = "*", index = "pypi"}
+pytest-mock = {version = "*", index = "pypi"}
+radon = {version = "*", extras = ["flake8"], index = "pypi"}
+
+[packages]
+environs = {version = ">=9,<10", index = "pypi"}
+flask = {index = "pypi"}
+flask-cors = {version = ">=3,<4", index = "pypi"}
+flask-smorest = {version = ">=0.32,<1", index = "pypi"}
+gunicorn = {version = ">=20,<21", index = "pypi"}
+requests = {index = "pypi"}
+types-requests = {index = "pypi"}
+
+[requires]
+python_version = "3.9"

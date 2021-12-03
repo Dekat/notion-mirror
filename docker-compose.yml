@@ -1,0 +1,11 @@
+# docker-compose file for prod environment
+# Used to run the app on final user computer.
+version: '3.4'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./notion_mirror:/home/notion_mirror/app/notion_mirror
+      - ./cache:/home/notion_mirror/app/cache
+    command: pipenv run python manage.py run

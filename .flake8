@@ -1,0 +1,12 @@
+[flake8]
+exclude = .venv,__pycache__,vendors,migrations
+# For black compatibility
+max-line-length = 88
+ignore =
+    W503,
+    # For black compatibility
+    E203,
+    E501,
+# ignore imports in init files
+per-file-ignores =
+    __init__.py:F401

@@ -1,0 +1,10 @@
+/cache/
+/.env
+
+/.coveragerc
+/.coverage
+/.pytest_cache/
+/.mypy_cache/
+
+.vscode
+.idea
