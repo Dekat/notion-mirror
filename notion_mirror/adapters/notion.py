@@ -120,7 +120,7 @@ class Notion(ports.DocumentationSource):
         page_id: str, html_folder_original_name: Optional[str]
     ) -> str:  # pragma: no cover
         with open(
-            os.path.join(settings.CACHE_FOLDER, page_id + ".html"), "r"
+            os.path.join(settings.CACHE_FOLDER, page_id + ".html"), "r", encoding="utf8"
         ) as html_file:
             html_file_content = html_file.read()
 
@@ -132,7 +132,7 @@ class Notion(ports.DocumentationSource):
         html_file_content = Notion._rewrite_pages_urls(html_file_content)
 
         with open(
-            os.path.join(settings.CACHE_FOLDER, page_id + ".html"), "w"
+            os.path.join(settings.CACHE_FOLDER, page_id + ".html"), "w", encoding="utf8"
         ) as html_file:
             html_file.write(html_file_content)
 
